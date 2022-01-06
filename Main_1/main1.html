@@ -18,24 +18,43 @@
             text-decoration: none;
             color: black;
         }
+        body{
+          background-color: #ccc;
+        }
         .container{
             min-width: 990px;
             min-height: 1170px;
             padding-left: 15px;
             padding-right: 15px;
+            overflow: hidden;
+        }
+        .meta-header{
+          height: 21px;
+          font-size: 0.8125rem;
         }
         .header-right{
             float: right;
-        }
-        .nav{
-            clear: both;
+            padding: 0px;
         }
         .header-right li{
             display: inline-block;
             margin: 0px 10px;
         }
-        .nav-link{
-            color: #fff;
+        .navi{
+            margin: 0px;
+            padding: 0px;
+            clear: both;
+            background-color: #353535;
+            height: 60px;
+        }
+        .navi a{
+          color: #fff;
+        }
+        .navi li{
+            display: inline-block;
+            margin: 0px 20px;
+            height: 100%;
+            padding-top: 20px;
         }
         .log-in{
             align-items: center;
@@ -69,33 +88,18 @@
         <div class="header">
             <div class="meta-header">
                 <ul class="header-right">
-                    <li><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/00/img/icon_profile_gray.png" style="width: 20px; height: 20px;"></li>
+                    <li><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/00/img/icon_profile_gray.png" style="width: 20px; height: 20px; vertical-align: -3px;"></li>
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                 </ul>
             </div>
-            <div class="nav row">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/mcdelivery_logo_ko.jpg" style="width: 146px; height: 47px;"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">메뉴</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">마이 페이지</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">기타 정보</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
+            <div class="navi">
+                <ul style="margin: 0px; padding: 0px; height: 100%;">
+                  <li style="padding-top: 0px; background-color: #fff; margin-left: ;"><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/mcdelivery_logo_ko.jpg" style="margin: 0px; width: 100%; height: 100%; vertical-align: -22px;"></li>
+                  <li><a href="#">메뉴</a></li>
+                  <li><a href="#">마이 페이지</a></li>
+                  <li><a href="#">기타정보</a></li>
+                </ul>
             </div>
         </div>
         <div class="section1">
