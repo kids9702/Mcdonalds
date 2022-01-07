@@ -29,6 +29,8 @@
           padding-right: 15px;
           
         }
+
+        /* 로그아웃, 주문조회 시작 */
         .meta-header{
           height: 21px;
           font-size: 0.8125rem;
@@ -42,6 +44,9 @@
           display: inline-block;
           margin: 0px 10px;
         }
+        /* 로그아웃, 주문조회 끝 */
+
+        /* navi 시작 */
         .navi{
           box-shadow: 3px 3px 0 0 gray;
           margin: 0px;
@@ -99,6 +104,7 @@
         .dropdown2-1 li{
           margin-bottom: 3px;
         }
+        /* navi 끝 */
 
         .section1{
           overflow: hidden;
@@ -124,10 +130,20 @@
         .orderbox{
           text-align: center;
         }
+        .d-block{
+          width: 100%;
+        }
+
+        /* footer 시작 */
         .footer{
           height: 490px;
         }
-        .footer-nav{
+        .footer-size{
+          width: 1140px;
+          position: absolute;
+          top: 50px; left: 15%;
+        }
+        .footer-nav-background{
           height: 362px;
           background-color: #353535;
           margin: 0px;
@@ -137,14 +153,26 @@
           background-color: black;
           margin: 0px;
         }
-        .d-block{
-          width: 100%;
+        .footer-list {
+          display: inline-block;
+        }
+        .footer-list li{
+          margin: 10px 0px;
+        }
+        .footer-list a{
+          color: #727272;
+          font-size: 1rem;
+        }
+        .footer-list h3{
+          font-size: 1.25rem;
+          color: #fff;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
+      <!-- 헤더 공통부분 시작 -->
         <div class="header">
             <div class="meta-header">
                 <ul class="header-right">
@@ -183,6 +211,8 @@
                 </ul>
             </div>
         </div>
+        <!-- 헤더 공통부분 끝 -->
+        
         <div class="section1">
             <div class="banner">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -225,23 +255,34 @@
         </div>
     </div>
     <div class="footer-container row">
-        <div class="footer-nav row">
-            <div class="footer-list col-3">
-                <ul>
-                    <h3>메뉴</h3>
-                    <li>추천 메뉴</li>
-                    <li>버거 & 세트</li>
-                    <li>스낵 & 사이드</li>
-                    <li>음료</li>
-                    <li>디저트</li>
-                    <li>해피밀®</li>
-                    <li>메뉴 다운로드</li>
-                </ul>
+        <div class="footer-nav-background row">
+          <div class="footer-size">
+            <div class="footer-list">
+              <ul>
+                <h3>메뉴</h3>
+                <li><a href="#">추천 메뉴</a></li>
+                <li><a href="#">버거 & 세트</a></li>
+                <li><a href="#">스낵 & 사이드</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">해피밀®</a></li>
+                <li><a href="#">메뉴 다운로드</a></li>
+              </ul>
             </div>
-            <div class="footer-list col-3">
-    
+            <div class="footer-list">
+              <ul>
+                <h3>메뉴</h3>
+                <li><a href="#">추천 메뉴</a></li>
+                <li><a href="#">버거 & 세트</a></li>
+                <li><a href="#">스낵 & 사이드</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">해피밀®</a></li>
+                <li><a href="#">메뉴 다운로드</a></li>
+              </ul>
             </div>
             <div class="footer-list col-6"></div>
+          </div>
         </div>
         <div class="footer-disclaimer row">
 
@@ -250,6 +291,7 @@
 
 
     <script>
+      // 메뉴 드롭다운 시작
       var mypagebtn=false;
       var infobtn=false;
       $('.mypage').on('click',function(){
@@ -276,6 +318,7 @@
           infobtn=false;
         }
       })
+      // 메뉴 드롭다운 끝
     </script>
 </body>
 </html>
