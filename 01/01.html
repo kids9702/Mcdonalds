@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="01.css">
+    <style>
+         *{
+            list-style-type: none;
+            box-sizing: border-box;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header-right{
+            float: right;
+        }
+        .nav{
+            clear: both;
+        }
+        .header-right li{
+            display: inline-block;
+            margin: 0px 10px;
+        }
+        .nav-link{
+            color: #fff;
+        }
+        .log-in{
+            align-items: center;
+            width: 300px; height: 415px;
+            position: absolute;
+            top: 50px; left: 950px;
+        }
+        .log-in-background{
+            position: absolute;
+            width: 100%; height: 100%;
+            background-color: #fff;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="meta-header">
+            <ul class="header-right">
+                <li><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/00/img/icon_profile_gray.png" style="width: 20px; height: 20px;"></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="nav row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/mcdelivery_logo_ko.jpg" style="width: 146px; height: 47px;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">메뉴</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">마이 페이지</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">기타 정보</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- 내파트 -->
+    <div id="container">        
+        <div id="side-bar-box">
+            <!-- 사이드 바 -->
+            <div id="side-bar">
+                <ul>일반메뉴
+                    <li>버거 & 세트</li>
+                    <li>스낵 & 사이드</li>
+                    <li>음료</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="top-menu-box"></div>
+        
+        <div id="content-box">            
+            <div id="content1">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger1.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content2">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger2.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content3">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger3.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content4">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger4.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content5">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger5.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content6">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger6.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+            <div id="content7">
+                <div id="panel-body">
+                    <img id="panel-img" src="/Mcdonalds/02/img/burger7.png" alt="">
+                </div>
+                <div id="panel-footer">
+                    <div id="panel-footer-box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="img-box">
+            <img id="banner-right" src="/Mcdonalds/02/img/how_mcdelivery_works_portrait_ko.png" alt="">
+        </div>        
+    </div>
+</body>
+</html>
