@@ -6,25 +6,24 @@
     text-align: center;
     margin: auto;
     margin-top: 10px;
-    align-content:flex-start;
+    flex-wrap: wrap;
 }#box{
     display: flex;
 }#side-bar-box{
     flex-grow: 0.3;
     border: 1px solid black;
 }#top-menu-box{
-    width: 1130;
+    width: 1100px;
     height: 50px;
-    border: 1px solid black;
-}
-#content-box{
+    border: 1px solid black;    
+}#content-box{
     display: flex;
     width: 540px;
     border: 1px solid black;
     flex-wrap: wrap;    
-    align-content:flex-start;    
+    align-content:flex-start;
 }#img-box{
-    flex-grow: 0.3;
+    /* flex-grow: 0.3; */
     border: 1px solid black;
 }#side-bar{
     display: flex;
