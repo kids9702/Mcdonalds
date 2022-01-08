@@ -10,94 +10,209 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <style>
         *{
-            list-style-type: none;
-            box-sizing: border-box;
-            position: relative;
+          list-style-type: none;
+          box-sizing: border-box;
+          position: relative;
+          font-family: "Malgun Gothic", Helvetica, Arial, sans-serif;
         }
         a{
             text-decoration: none;
             color: black;
         }
+        body{
+          background-color: #ccc;
+        }
         .container{
-            min-width: 990px;
-            min-height: 1170px;
-            padding-left: 15px;
-            padding-right: 15px;
+          min-width: 990px;
+          min-height: 1170px;
+          padding-left: 15px;
+          padding-right: 15px;
+          
+        }
+
+        /* 로그아웃, 주문조회 시작 */
+        .meta-header{
+          height: 21px;
+          font-size: 0.8125rem;
         }
         .header-right{
-            float: right;
-        }
-        .nav{
-            clear: both;
+          margin-top: 10px;
+          float: right;
+          padding: 0px;
         }
         .header-right li{
-            display: inline-block;
-            margin: 0px 10px;
+          display: inline-block;
+          margin: 0px 10px;
         }
-        .nav-link{
-            color: #fff;
+        /* 로그아웃, 주문조회 끝 */
+
+        /* navi 시작 */
+        .navi{
+          box-shadow: 3px 3px 0 0 gray;
+          margin: 0px;
+          padding: 0px;
+          clear: both;
+          background: linear-gradient(to bottom, #505050 10%, #353535);
+          border-radius: 10px;
+          height: 60px;
         }
+        .navi a{color: #fff;}
+        .navimenu{
+          box-sizing: border-box;
+          font-size: 1.25rem;
+          display: inline-block;
+          padding-right:50px;
+          height: 100%;
+          padding-top: 15px;
+          border-right: 1px solid gray;
+        }
+        .navi-menu{
+          margin: 0px; padding: 0px; height: 100%;
+        }
+        .info{
+          border: none;
+        }
+        .dropdown1{
+          position: absolute;
+          top: 80px; left: -23px;
+          width: 160px; height: 190px;
+          background-color: #3f3f3f;
+          z-index: 1000;
+          font-size: 1.125rem;
+          display: none;
+        }
+        .dropdown1-1{
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+        .dropdown1-1 li{
+          margin-bottom: 3px;
+        }
+        .dropdown2{
+          position: absolute;
+          top: 80px; left: -23px;
+          width: 300px; height: 190px;
+          background-color: #3f3f3f;
+          z-index: 1000;
+          font-size: 1.125rem;
+          display: none;
+        }
+        .dropdown2-1{
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+        .dropdown2-1 li{
+          margin-bottom: 3px;
+        }
+        /* navi 끝 */
+
+        .section1{
+          overflow: hidden;
+        }
+        .banner{margin-top: 10px;
+          width: 1290px;
+          overflow: hidden;}
         .log-in{
-            align-items: center;
-            width: 300px; height: 415px;
-            position: absolute;
-            top: 50px; left: 950px;
+          overflow: hidden;
+          align-items: center;
+          width: 300px; height: 415px;
+          position: absolute;
+          top: 50px; left: 950px;
         }
         .log-in-background{
-            position: absolute;
-            width: 100%; height: 100%;
-            background-color: #fff;
-            opacity: 0.2;
+          text-align: center;
+          position: absolute;
+          width: 100%; height: 100%;
+          background-color: #fff;
+          opacity: 0.6;
+          padding-top: 5px;
         }
+        .orderbox{
+          text-align: center;
+        }
+        .d-block{
+          width: 100%;
+        }
+
+        /* footer 시작 */
         .footer{
-            height: 490px;
+          height: 490px;
         }
-        .footer-nav{
-            height: 362px;
-            background-color: #353535;
-            margin: 0px;
+        .footer-size{
+          width: 1140px;
+          position: absolute;
+          top: 50px; left: 15%;
+        }
+        .footer-nav-background{
+          height: 362px;
+          background-color: #353535;
+          margin: 0px;
         }
         .footer-disclaimer{
-            height: 125px;
-            background-color: black;
-            margin: 0px;
+          height: 125px;
+          background-color: black;
+          margin: 0px;
         }
+        .footer-list {
+          display: inline-block;
+        }
+        .footer-list li{
+          margin: 10px 0px;
+        }
+        .footer-list a{
+          color: #727272;
+          font-size: 1rem;
+        }
+        .footer-list h3{
+          font-size: 1.25rem;
+          color: #fff;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
+      <!-- 헤더 공통부분 시작 -->
         <div class="header">
             <div class="meta-header">
                 <ul class="header-right">
-                    <li><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/00/img/icon_profile_gray.png" style="width: 20px; height: 20px;"></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
+                    <li><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/00/img/icon_profile_blue.png" style="width: 20px; height: 20px; vertical-align: -3px;"></li>
+                    <li><a href="#">로그아웃</a></li>
+                    <li><a href="#">주문 조회</a></li>
                 </ul>
             </div>
-            <div class="nav row">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/mcdelivery_logo_ko.jpg" style="width: 146px; height: 47px;"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">메뉴</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">마이 페이지</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">기타 정보</a>
-                          </li>
-                        </ul>
-                      </div>
+            <div class="navi">
+                <ul class="navi-menu">
+                  <li class="navimenu" style=" border-radius: 10px 0px 0px 10px; padding-top: 0px; background-color: #fff; width: 180px; margin: 0px; vertical-align: top;"><img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/mcdelivery_logo_ko.jpg" style="width: 146px; height: 47px; top: 6px; left: 10px;"></li>
+                  <li class="navimenu" style="padding-left: 50px; margin-right: 50px; "><a href="#">메뉴</a></li>
+                  <li class="navimenu mypage" style="margin-right: 50px;"><a href="#">마이 페이지</a>
+                    <div class="dropdown1">
+                      <ul class="dropdown1-1">
+                        <li><a href="#">주문 조회</a></li>
+                        <li><a href="#">주문 내역</a></li>
+                        <li><a href="#">즐겨찾기 메뉴</a></li>
+                        <li><a href="#">주소록</a></li>
+                        <li><a href="#">계정 설정</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                      </ul>
                     </div>
-                  </nav>
+                  </li>
+                  <li class="navimenu info"><a href="#">기타정보</a>
+                    <div class="dropdown2">
+                      <ul class="dropdown2-1">
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">과일 칠러 판매 제외 매장</a></li>
+                        <li><a href="#">영양정보/원산지 정보/기타 정보</a></li>
+                        <li><a href="#">모바일 웹</a></li>
+                      </ul>
+                    </div></li>
+                </ul>
             </div>
         </div>
+        <!-- 헤더 공통부분 끝 -->
+        
         <div class="section1">
             <div class="banner">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -107,61 +222,103 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/banners/landing_67379_WOS.jpg?WOS" class="d-block w-100" alt="...">
+                        <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/banners/landing_67379_WOS.jpg?WOS" class="d-block" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/banners/landing_67230_WOS.jpg?WOS" class="d-block w-100" alt="...">
+                        <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/banners/landing_67230_WOS.jpg?WOS" class="d-block" alt="...">
                       </div>
                     </div>
                   </div>
             </div>
             <div class="log-in">
-                <div class="log-in-background"></div>
-                <p style="text-align:center">주문 시작하기</p>
-                <div class="row" style="z-index: 100;"><p class="col">로그인</p><p class="col">비회원 주문</p></div>
-                <div class="row" style="z-index: 100;">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
+                <div class="log-in-background">
                 </div>
+                <div class="orderbox">
+                  <br><br>
+                  <p style="font-size: 1.25rem; margin: 0px;">환영합니다 고객님</p>
+                  <hr style="margin: 5px;">
+                  <p style="font-size: 1.375rem; margin: 0px;">다음의 주소로 배달됩니다</p>
+                  <select name="address" style="display: block; width: 100%; height: 50px; margin: 10px 0px;">
+                    <option value="#">대구 광역시 북구 관음동 1340-37 3층</option>
+                  </select>
+                  <a href="#">▶ 주소 추가하기</a><br><br><br>
+                  <button type="button" class="btn btn-danger">주문하기</button>
+                </div>
+                
+                
             </div>
         </div>
         <hr>
         <div class="section2">
             <h2>맥딜리버리 이용 방법!</h2>
-            <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/how_mcdelivery_works_ko.png" style="margin-bottom: 10px;">
+            <img src="https://www.mcdelivery.co.kr/kr//static/1640334053791/assets/82/img/how_mcdelivery_works_ko.png" style="margin-bottom: 10px; width: 100%;">
         </div>
     </div>
     <div class="footer-container row">
-        <div class="footer-nav row">
-            <div class="footer-list col-3">
-                <ul>
-                    <h3>메뉴</h3>
-                    <li>추천 메뉴</li>
-                    <li>버거 & 세트</li>
-                    <li>스낵 & 사이드</li>
-                    <li>음료</li>
-                    <li>디저트</li>
-                    <li>해피밀®</li>
-                    <li>메뉴 다운로드</li>
-                </ul>
+        <div class="footer-nav-background row">
+          <div class="footer-size">
+            <div class="footer-list">
+              <ul>
+                <h3>메뉴</h3>
+                <li><a href="#">추천 메뉴</a></li>
+                <li><a href="#">버거 & 세트</a></li>
+                <li><a href="#">스낵 & 사이드</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">해피밀®</a></li>
+                <li><a href="#">메뉴 다운로드</a></li>
+              </ul>
             </div>
-            <div class="footer-list col-3">
-    
+            <div class="footer-list">
+              <ul>
+                <h3>메뉴</h3>
+                <li><a href="#">추천 메뉴</a></li>
+                <li><a href="#">버거 & 세트</a></li>
+                <li><a href="#">스낵 & 사이드</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">해피밀®</a></li>
+                <li><a href="#">메뉴 다운로드</a></li>
+              </ul>
             </div>
             <div class="footer-list col-6"></div>
+          </div>
         </div>
         <div class="footer-disclaimer row">
 
         </div>
     </div>
+
+
+    <script>
+      // 메뉴 드롭다운 시작
+      var mypagebtn=false;
+      var infobtn=false;
+      $('.mypage').on('click',function(){
+        if(mypagebtn==false){
+          $('.dropdown1').css('display','block');
+          $('.dropdown2').css('display','none');
+          mypagebtn=true;
+          info=false;
+        }
+        else{
+          $('.dropdown1').css('display','none');
+          mypagebtn=false;
+        }
+      })
+      $('.info').on('click',function(){
+        if(infobtn==false){
+          $('.dropdown2').css('display','block');
+          $('.dropdown1').css('display','none');
+          infobtn=true;
+          mypagebtn=false;
+        }
+        else{
+          $('.dropdown2').css('display','none');
+          infobtn=false;
+        }
+      })
+      // 메뉴 드롭다운 끝
+    </script>
 </body>
 </html>
