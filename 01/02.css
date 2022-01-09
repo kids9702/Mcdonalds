@@ -13,7 +13,7 @@
     width: 170px;
     height: 300px;
     margin-left: 10px;
-    background-color: yellow;
+    background-color: #feba00;
 }#content-box1{
     border: 1px solid black;
     flex-grow: 3;    
@@ -59,12 +59,48 @@
 }#panel-footer-box{
     width: 237px;
     height: 56px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
+    display: flex;
 }#top-menu{
     border: 1px solid black;
     flex-grow: 1;
 }#top-menu-right{
     border: 1px solid black;
     flex-grow: 3;
+}figcaption{
+    text-align:center;
+}#product-info{
+    border: 1px solid black;
+    width: 119px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+}#product-control{
+    border: 1px solid #d21920;
+    border-radius: 3px;
+    width: 119px;
+    height: 36px;
+    background-color: #feba00;
+    display: flex;
+    cursor: pointer;
+    margin-left: 5px;
+
+}#product-price{
+    flex-grow: 1;
+    border: 1px solid black;
+    color: blue;
+}#product-kacl{
+    flex-grow: 1;
+}#allergy{
+    border: 1px solid black;
+    flex-grow: 1;
+    font-size: 15px;    
+}#btn {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    margin: auto;
+    color: #d21920;   
 }
+
