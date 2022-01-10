@@ -1,0 +1,29 @@
+#container{
+    /* border: 1px solid black; */
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    margin: auto;
+
+}#side-bar-box{
+    border: 1px solid black;
+    flex-grow: 1;
+}#content-box1{
+    border: 1px solid black;
+    flex-grow: 3;    
+    display: flex;
+    flex-direction: column;
+}#top-menu-box{
+    border: 1px solid black;
+    flex-grow: 0.2;
+}#content-box2{
+    border: 1px solid black;
+    flex-grow: 2;
+    display: flex;
+}#content{
+    border: 1px solid black;
+    flex-grow: 1;
+}#side-bar-right{
+    border: 1px solid black;
+    flex-grow: 0.5;
+}
