@@ -95,12 +95,14 @@
 }#allergy{
     border: 1px solid black;
     flex-grow: 1;
-    font-size: 15px;    
-}#btn {
+    font-size: 14px;    
+}#btn{
     text-align: center;
     width: 100%;
     text-decoration: none;
     margin: auto;
-    color: #d21920;   
+    color: #d21920;  
+}#allergy span:hover{
+    
 }
 
